@@ -7,17 +7,14 @@ import QuizzContext from './context/QuizzContext';
 
 function App() {
   const { difficulty } = useContext(DifficultyContext)
-  const { quizz, endQuizz, setQuestions } = useContext(QuizzContext)
+  const { quizz } = useContext(QuizzContext)
   const hasEnded = quizz.hasEnded
-  console.log(quizz)
 
   return (
     <div>
       { !difficulty? <Menu/> : null }
       { difficulty && !hasEnded? <Questions/> : null }
       { difficulty && hasEnded? <Results/> : null }
-      <button onClick={ ()=> {
-        hasEnded? setQuestions([]) : endQuizz() } }>change</button>
     </div>
   );
 }
