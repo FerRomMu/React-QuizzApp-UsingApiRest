@@ -1,18 +1,19 @@
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import Menu from './containers/menu/Menu';
 import Questions from './containers/questions/Questions';
 import Results from './containers/results/Results';
+import DifficultyContext from './context/DifficultyContext'
 
 function App() {
-  const [container, setContainer] = useState(0)
-  const nextContainer = container === 2? 0 : container+1
-  
+  const { difficulty } = useContext(DifficultyContext)
+  const hasEnded = false
+  console.log(difficulty)
+
   return (
     <div>
-      { !container? <Menu/> : null }
-      { container === 1? <Questions/> : null }
-      { container === 2? <Results/> : null }
-      <button onClick={ () => setContainer(nextContainer)}>Change</button>
+      { !difficulty? <Menu/> : null }
+      { difficulty && !hasEnded? <Questions/> : null }
+      { difficulty && hasEnded? <Results/> : null }
     </div>
   );
 }
