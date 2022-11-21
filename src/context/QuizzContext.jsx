@@ -23,8 +23,15 @@ export const QuizzProvider = ({ children }) => {
         })
     }
 
+    const resetQuizz = () =>  {
+        setQuizzContext({
+            hasEnded: null,
+            questions: null
+        })
+    }
+
     return (
-        <QuizzContext.Provider value={{ quizz, setQuestions, endQuizz }}>
+        <QuizzContext.Provider value={{ quizz, resetQuizz, setQuestions, endQuizz }}>
             {children}
         </QuizzContext.Provider>
     )
