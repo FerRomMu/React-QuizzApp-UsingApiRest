@@ -10,7 +10,9 @@ const Menu = () => {
 
     const [options, setOptions] = useState([])
     useEffect(() => {
-        getDifficulty(setOptions)
+        getDifficulty().then(
+            result => setOptions(result)
+        )
      }, [])
 
     const { setDifficultyContext } = useContext(DifficultyContext)

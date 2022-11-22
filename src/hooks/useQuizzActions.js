@@ -8,12 +8,8 @@ export const useQuizzActions = () => {
     const { difficulty } = useContext(DifficultyContext)
     const [getQuestions, setQuestions] = useState([])
     useEffect(() => {
-        async function wrap() {
-        const result = await getQuestionsByDifficulty(difficulty)
-        setQuestions(result);
-        console.log(result)
-        }
-        wrap()
+        getQuestionsByDifficulty(difficulty)
+        .then(result => setQuestions(result))
     }, [])
     
     const [index, setIndex] = useState(0)
