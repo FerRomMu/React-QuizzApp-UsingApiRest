@@ -1,9 +1,7 @@
 import { useContext, useEffect, useState } from "react"
 import { getDifficulty } from "../../api/api"
-import OptionQuizz from "../../componentes/atoms/Option"
-import Subtitle from "../../componentes/atoms/Subtitle"
-import TextInfo from "../../componentes/atoms/TextInfo"
-import Title from "../../componentes/atoms/Title"
+import Header from "../../componentes/molecules/Header"
+import Main from "../../componentes/molecules/Main"
 import DifficultyContext from "../../context/DifficultyContext"
 
 const Menu = () => {
@@ -16,12 +14,12 @@ const Menu = () => {
      }, [])
 
     const { setDifficultyContext } = useContext(DifficultyContext)
+    const callback = (opt) => setDifficultyContext(opt)
+
     return (
         <>
-            <Title title="Dificultad"/>
-            <Subtitle subtitle="Elige dificultad"/>
-            <TextInfo text="Elige una dificultad para empezar a jugar."/>
-            { options.map( op => <OptionQuizz option={op} action={ () => setDifficultyContext(op) }/>)}
+            <Header title="Dificultad"/>
+            <Main subtitle="Elige dificultad" texts={ ["Elige una dificultad para empezar a jugar."] } opts={ options } callback={ callback }/>
         </>
     )
 }
