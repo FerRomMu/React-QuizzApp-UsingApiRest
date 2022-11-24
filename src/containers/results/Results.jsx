@@ -9,7 +9,7 @@ const Results = () => {
     const { resetDifficultyContext } = useContext(DifficultyContext)
     const { quizz, resetQuizz } = useContext(QuizzContext)
 
-    const getResultado = quizz.answers.map(a => a? 1:0 ).reduce((a,b) => a+b, 0)
+    const getResultado = quizz.answers.map(a => a ? 1:0 ).reduce((a,b) => a+b, 0)
 
     return (
         <>
