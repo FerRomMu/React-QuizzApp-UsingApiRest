@@ -1,6 +1,4 @@
 import { useContext } from "react"
-import OptionQuizz from "../../componentes/atoms/Option"
-import TextInfo from "../../componentes/atoms/TextInfo"
 import Header from "../../componentes/molecules/Header"
 import Main from "../../componentes/molecules/Main"
 import DifficultyContext from "../../context/DifficultyContext"

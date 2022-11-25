@@ -1,6 +1,3 @@
-import OptionQuizz from "../../componentes/atoms/Option"
-import Subtitle from "../../componentes/atoms/Subtitle"
-import TextInfo from "../../componentes/atoms/TextInfo"
 import Header from "../../componentes/molecules/Header"
 import Main from "../../componentes/molecules/Main"
 import { useQuizzActions } from "../../hooks/useQuizzActions"

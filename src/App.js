@@ -4,7 +4,7 @@ import Questions from './containers/questions/Questions';
 import Results from './containers/results/Results';
 import DifficultyContext from './context/DifficultyContext'
 import QuizzContext from './context/QuizzContext';
-
+import './App.css'
 function App() {
   const { difficulty } = useContext(DifficultyContext)
   const { quizz } = useContext(QuizzContext)
