@@ -8,7 +8,7 @@ const Main = ( { subtitle, texts, opts, callback } ) => {
         <main>
             <Subtitle subtitle={ subtitle }/>
             { texts?.map( text => <TextInfo text={ text }/>) }
-            { opts?.map( op => <OptionQuizz option={ op.option? op.option : op } action={ () => callback(op) }/>) }
+            <div>{ opts?.map( op => <OptionQuizz option={ op.option? op.option : op } action={ () => callback(op) }/>) }</div>
         </main>
     )
 }
