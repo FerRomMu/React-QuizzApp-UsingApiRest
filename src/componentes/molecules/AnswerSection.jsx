@@ -1,14 +1,14 @@
-import OptionQuizz from "../atoms/Option"
 import Subtitle from "../atoms/Subtitle"
 import TextInfo from "../atoms/TextInfo"
 
-const AnswerSection = ( { subtitle, texts, opts, callback } ) => {
+const AnswerSection = ( { result } ) => {
+
+    const resultString = result? "correcta, ¡Sigue así!" : "incorrecta."
 
     return (
         <section>
-            <Subtitle subtitle={ subtitle }/>
-            { texts?.map( text => <TextInfo text={ text }/>) }
-            <div>{ opts?.map( op => <OptionQuizz option={ op.option? op.option : op } action={ () => callback(op) }/>) }</div>
+            <Subtitle subtitle={ result? "Correcto!" : "Oops... Incorrecto" }/>
+            <TextInfo text={ "La respuesta fue " + resultString }/>
         </section>
     )
 }

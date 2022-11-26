@@ -11,7 +11,8 @@ export const useQuizzActions = () => {
         getQuestionsByDifficulty(difficulty)
         .then(result => setQuestions(result))
     }, [])
-    
+
+    const [lastResult, setResult] = useState()
     const [index, setIndex] = useState(0)
     const actualQuestion = getQuestions[index]
     const { endQuizz, pushAnswer } = useContext(QuizzContext)
@@ -26,7 +27,9 @@ export const useQuizzActions = () => {
     }
 
     const setAnswer = async (op, id) => {
-        pushAnswer(await checkAnswer(optionToString(op), id))
+        let result = await checkAnswer(optionToString(op), id)
+        setResult(result)
+        pushAnswer(result)
         if(index < getLength-1){
             setIndex(index+1)
         } else {
@@ -53,6 +56,6 @@ export const useQuizzActions = () => {
         { option: actualQuestion.option4, id: actualQuestion.id }
     ] : []
     const getQuestion = actualQuestion?.question? actualQuestion.question : 'Cargando'
-    
-    return [getQuestion, index, getLength, getOptions, setAnswer]
+
+    return [getQuestion, index, getLength, getOptions, setAnswer, lastResult]
 }
