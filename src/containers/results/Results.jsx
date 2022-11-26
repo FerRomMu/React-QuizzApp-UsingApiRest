@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import Header from "../../componentes/molecules/Header"
-import Main from "../../componentes/molecules/Main"
+import QuestionSection from "../../componentes/molecules/QuestionSection"
 import DifficultyContext from "../../context/DifficultyContext"
 import QuizzContext from "../../context/QuizzContext"
 
@@ -13,12 +13,14 @@ const Results = () => {
     return (
         <>
             <Header title="Resultado"/>
-            <Main subtitle={"¿Como te fue?"} 
+            <main>
+                <QuestionSection subtitle={"¿Como te fue?"} 
                 texts={ [
                     "Felicitaciones haz completado toda las respuestas. Veamos como te fue!",
                     "Tu resultado es: " + getResultado + " respuestas correctas."
-                ] } 
+                ] }
                 opts={ ["Jugar de nuevo"] } callback={ callback }/>
+            </main>
         </>
     )
 }

@@ -1,5 +1,5 @@
 import Header from "../../componentes/molecules/Header"
-import Main from "../../componentes/molecules/Main"
+import QuestionSection from "../../componentes/molecules/QuestionSection"
 import { useQuizzActions } from "../../hooks/useQuizzActions"
 
 const Questions = () => {
@@ -12,8 +12,10 @@ const Questions = () => {
     return (
         <>
             <Header title="Preguntas"/>
-            <Main subtitle={"Responde la pregunta (" + (index+1) + "/" + getLength + ")"} texts={ [getQuestion] } 
+            <main>
+                <QuestionSection subtitle={"Responde la pregunta (" + (index+1) + "/" + getLength + ")"} texts={ [getQuestion] }
                 opts={ getOptions } callback={ callback }/>
+            </main>
         </>
     )
 }
