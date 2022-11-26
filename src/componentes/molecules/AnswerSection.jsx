@@ -3,12 +3,12 @@ import TextInfo from "../atoms/TextInfo"
 
 const AnswerSection = ( { result } ) => {
 
-    const resultString = result? "correcta, ¡Sigue así!" : "incorrecta."
+    const resultString = result? "correct, ¡Keep it up!" : "incorrect."
 
     return (
         <section>
-            <Subtitle subtitle={ result? "Correcto!" : "Oops... Incorrecto" }/>
-            <TextInfo text={ "La respuesta fue " + resultString }/>
+            <Subtitle subtitle={ result? "Correct!" : "Oops... Incorrect" }/>
+            <TextInfo text={ "Your answer was " + resultString }/>
         </section>
     )
 }

@@ -55,7 +55,7 @@ export const useQuizzActions = () => {
         { option: actualQuestion.option3, id: actualQuestion.id },
         { option: actualQuestion.option4, id: actualQuestion.id }
     ] : []
-    const getQuestion = actualQuestion?.question? actualQuestion.question : 'Cargando'
+    const getQuestion = actualQuestion?.question? actualQuestion.question : 'Loading..'
 
     return [getQuestion, index, getLength, getOptions, setAnswer, lastResult]
 }

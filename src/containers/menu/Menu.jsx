@@ -18,9 +18,9 @@ const Menu = () => {
 
     return (
         <>
-            <Header title="Dificultad"/>
+            <Header title="Difficulty"/>
             <main>
-                <QuestionSection subtitle="Elige dificultad" texts={ ["Elige una dificultad para empezar a jugar."] } opts={ options } callback={ callback }/>
+                <QuestionSection subtitle="Choose a difficulty" texts={ ["Choose a difficulty to start the game."] } opts={ options } callback={ callback }/>
             </main>
         </>
     )

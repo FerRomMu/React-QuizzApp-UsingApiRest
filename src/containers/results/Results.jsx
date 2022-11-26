@@ -12,14 +12,14 @@ const Results = () => {
     const callback = () => { resetDifficultyContext(); resetQuizz() }
     return (
         <>
-            <Header title="Resultado"/>
+            <Header title="Result"/>
             <main>
-                <QuestionSection subtitle={"¿Como te fue?"} 
+                <QuestionSection subtitle={"Your final result"} 
                 texts={ [
-                    "Felicitaciones haz completado toda las respuestas. Veamos como te fue!",
-                    "Tu resultado es: " + getResultado + " respuestas correctas."
+                    "Congratulations you have completed the quizz. Let's see how you did it!",
+                    "Your result is: " + getResultado + " correct answers."
                 ] }
-                opts={ ["Jugar de nuevo"] } callback={ callback }/>
+                opts={ ["Play Again"] } callback={ callback }/>
             </main>
         </>
     )

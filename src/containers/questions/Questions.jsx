@@ -17,10 +17,10 @@ const Questions = () => {
 
     return (
         <>
-            <Header title="Preguntas"/>
+            <Header title="Questions"/>
             <main>
                 { onQuestion?
-                    <QuestionSection subtitle={"Responde la pregunta (" + (index+1) + "/" + getLength + ")"} texts={ [getQuestion] }
+                    <QuestionSection subtitle={"Answer the question (" + (index+1) + "/" + getLength + ")"} texts={ [getQuestion] }
                 opts={ getOptions } callback={ callback }/> :
                     <AnswerSection result={ lastResult }/>
                 }
