@@ -8,7 +8,7 @@ const QuestionSection = ( { subtitle, texts, opts, callback } ) => {
         <section>
             <Subtitle subtitle={ subtitle }/>
             { texts?.map( text => <TextInfo text={ text }/>) }
-            <div>{ opts?.map( op => <OptionQuizz option={ op.option? op.option : op } action={ () => callback(op) }/>) }</div>
+            <div className="buttonsDiv">{ opts?.map( op => <OptionQuizz option={ op.option? op.option : op } action={ () => callback(op) }/>) }</div>
         </section>
     )
 }
