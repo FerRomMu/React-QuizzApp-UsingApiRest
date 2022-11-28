@@ -1,7 +1,7 @@
 import { useState } from "react"
 import AnswerSection from "../../componentes/molecules/AnswerSection"
 import Header from "../../componentes/molecules/Header"
-import QuestionSection from "../../componentes/molecules/MainSection"
+import MainSection from "../../componentes/molecules/MainSection"
 import { useQuizzActions } from "../../hooks/useQuizzActions"
 
 const Questions = () => {
@@ -20,7 +20,7 @@ const Questions = () => {
             <Header title="QUESTIONS"/>
             <main>
                 { onQuestion?
-                    <QuestionSection subtitle={"Answer the question (" + (index+1) + "/" + getLength + ")"} texts={ [getQuestion] }
+                    <MainSection subtitle={"Answer the question (" + (index+1) + "/" + getLength + ")"} texts={ [getQuestion] }
                 opts={ getOptions } callback={ callback }/> :
                     <AnswerSection result={ lastResult }/>
                 }
