@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/unq-ui-fernando-mario-romero-mu-oz-trabajo-final/static/css/main.5cb9632f.css",
+    "main.css": "/unq-ui-fernando-mario-romero-mu-oz-trabajo-final/static/css/main.491527a9.css",
     "main.js": "/unq-ui-fernando-mario-romero-mu-oz-trabajo-final/static/js/main.0514f4c4.js",
     "index.html": "/unq-ui-fernando-mario-romero-mu-oz-trabajo-final/index.html",
-    "main.5cb9632f.css.map": "/unq-ui-fernando-mario-romero-mu-oz-trabajo-final/static/css/main.5cb9632f.css.map",
+    "main.491527a9.css.map": "/unq-ui-fernando-mario-romero-mu-oz-trabajo-final/static/css/main.491527a9.css.map",
     "main.0514f4c4.js.map": "/unq-ui-fernando-mario-romero-mu-oz-trabajo-final/static/js/main.0514f4c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cb9632f.css",
+    "static/css/main.491527a9.css",
     "static/js/main.0514f4c4.js"
   ]
 }
