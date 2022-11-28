@@ -12,7 +12,7 @@ const Results = () => {
     const callback = () => { resetDifficultyContext(); resetQuizz() }
     return (
         <>
-            <Header title="Result"/>
+            <Header title="RESULT"/>
             <main>
                 <QuestionSection subtitle={"Your final result"} 
                 texts={ [

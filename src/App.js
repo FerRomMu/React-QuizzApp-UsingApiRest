@@ -11,11 +11,14 @@ function App() {
   const hasEnded = quizz.hasEnded
 
   return (
-    <div>
-      { !difficulty? <Menu/> : null }
-      { difficulty && !hasEnded? <Questions/> : null }
-      { difficulty && hasEnded? <Results/> : null }
-    </div>
+    <>
+      <div className="gameContainer">
+        { !difficulty? <Menu/> : null }
+        { difficulty && !hasEnded? <Questions/> : null }
+        { difficulty && hasEnded? <Results/> : null }
+      </div>
+      <div className="backgroundContainer">???????</div>
+    </>
   );
 }
 

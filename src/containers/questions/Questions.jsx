@@ -17,7 +17,7 @@ const Questions = () => {
 
     return (
         <>
-            <Header title="Questions"/>
+            <Header title="QUESTIONS"/>
             <main>
                 { onQuestion?
                     <QuestionSection subtitle={"Answer the question (" + (index+1) + "/" + getLength + ")"} texts={ [getQuestion] }
