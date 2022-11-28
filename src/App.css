@@ -225,3 +225,14 @@ p {
     grid-area: l;
     font-size: 5em;
 }
+
+@media (max-width: 768px) {
+
+    .backgroundContainer{
+        display: none;
+    }
+
+    .gameContainer {
+        width: 100%;
+    }
+}
