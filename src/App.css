@@ -31,16 +31,6 @@ body {
     box-shadow: 0px 0px 4px 0px #182222;
 }
 
-.backgroundContainer {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(-45deg, #FED049, #CFFDE1);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    z-index: 1;
-}
-
 @keyframes gradient {
 	0% {
 		background-position: 0% 50%;
@@ -115,4 +105,106 @@ button {
     height: 2.5em;
     font-weight: bold;
     font-size: 1em;
+}
+
+.backgroundContainer {
+    position: absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #FED049, #CFFDE1);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.gridBackground {
+    color: #0001;
+    display: grid;
+    height: 100%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 3px 3px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "a c . . . . ."
+      "a c . . . e e"
+      "b b . . . d j"
+      "f f . . . d j"
+      "i h . . g g l"
+      "i h . . . k l";
+}
+
+.f {
+    grid-area: f;
+    font-size: 5em;
+    transform: rotate(-20deg);
+}
+
+.a {
+    grid-area: a;
+    font-size: 5em;
+    transform: rotate(80deg);
+}
+
+.b {
+    grid-area: b;
+    font-size: 7em;
+    transform: rotate(-40deg);
+}
+
+.c {
+    grid-area: c;
+    font-size: 5em;
+    transform: rotate(-65deg);
+}
+
+.d {
+    grid-area: d;
+    font-size: 5em;
+    transform: rotate(130deg);
+}
+
+.e {
+    grid-area: e;
+    font-size: 5em;
+    transform: rotate(120deg);
+}
+
+.g {
+    grid-area: g;
+    font-size: 7em;
+    transform: rotate(180deg);
+}
+
+.h {
+    grid-area: h;
+    font-size: 5em;
+    transform: rotate(-10deg);
+}
+
+.i {
+    grid-area: i;
+    font-size: 5em;
+    transform: rotate(120deg);
+}
+
+.j {
+    grid-area: j;
+    font-size: 7em;
+    transform: rotate(30deg);
+}
+
+.k {
+    grid-area: k;
+    font-size: 5em;
+    transform: rotate(215deg);
+}
+
+.l {
+    grid-area: l;
+    font-size: 5em;
 }

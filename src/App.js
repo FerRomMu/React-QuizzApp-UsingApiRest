@@ -5,6 +5,7 @@ import Results from './containers/results/Results';
 import DifficultyContext from './context/DifficultyContext'
 import QuizzContext from './context/QuizzContext';
 import './App.css'
+import Background from './containers/Background';
 function App() {
   const { difficulty } = useContext(DifficultyContext)
   const { quizz } = useContext(QuizzContext)
@@ -17,7 +18,7 @@ function App() {
         { difficulty && !hasEnded? <Questions/> : null }
         { difficulty && hasEnded? <Results/> : null }
       </div>
-      <div className="backgroundContainer">???????</div>
+      <Background/>
     </>
   );
 }
