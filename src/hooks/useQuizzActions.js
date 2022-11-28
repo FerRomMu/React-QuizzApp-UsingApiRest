@@ -10,6 +10,9 @@ export const useQuizzActions = () => {
     useEffect(() => {
         getQuestionsByDifficulty(difficulty)
         .then(result => setQuestions(result))
+        .catch(e => setQuestions([
+            { question: "Ha ocurrido un error inesperado. Pruebe recargar la página." }
+        ]))
     }, [])
 
     const [lastResult, setResult] = useState()

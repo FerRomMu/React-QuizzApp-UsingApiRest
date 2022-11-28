@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import Header from "../../componentes/molecules/Header"
-import QuestionSection from "../../componentes/molecules/QuestionSection"
+import MainSection from "../../componentes/molecules/MainSection"
 import DifficultyContext from "../../context/DifficultyContext"
 import QuizzContext from "../../context/QuizzContext"
 
@@ -14,7 +14,7 @@ const Results = () => {
         <>
             <Header title="RESULT"/>
             <main>
-                <QuestionSection subtitle={"Your final result"} 
+                <MainSection subtitle={"Your final result"}
                 texts={ [
                     "Congratulations you have completed the quizz. Let's see how you did it!",
                     "Your result is: " + getResultado + " correct answers."

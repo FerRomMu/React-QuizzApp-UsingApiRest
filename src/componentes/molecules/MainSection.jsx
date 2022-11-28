@@ -2,7 +2,7 @@ import OptionQuizz from "../atoms/Option"
 import Subtitle from "../atoms/Subtitle"
 import TextInfo from "../atoms/TextInfo"
 
-const QuestionSection = ( { subtitle, texts, opts, callback } ) => {
+const MainSection = ( { subtitle, texts, opts, callback } ) => {
 
     return (
         <section>
@@ -13,4 +13,4 @@ const QuestionSection = ( { subtitle, texts, opts, callback } ) => {
     )
 }
 
-export default QuestionSection
+export default MainSection
