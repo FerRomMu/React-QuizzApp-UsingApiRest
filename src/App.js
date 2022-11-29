@@ -1,11 +1,12 @@
 import { useContext } from 'react';
-import Menu from './containers/menu/Menu';
-import Questions from './containers/questions/Questions';
-import Results from './containers/results/Results';
+import Menu from './containers/Menu';
+import Questions from './containers/Questions';
+import Results from './containers/Results';
 import DifficultyContext from './context/DifficultyContext'
 import QuizzContext from './context/QuizzContext';
 import './App.css'
 import Background from './containers/Background';
+
 function App() {
   const { difficulty } = useContext(DifficultyContext)
   const { quizz } = useContext(QuizzContext)

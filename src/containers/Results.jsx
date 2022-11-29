@@ -1,8 +1,8 @@
 import { useContext } from "react"
-import Header from "../../componentes/molecules/Header"
-import MainSection from "../../componentes/molecules/MainSection"
-import DifficultyContext from "../../context/DifficultyContext"
-import QuizzContext from "../../context/QuizzContext"
+import Header from "../componentes/molecules/Header"
+import MainSection from "../componentes/molecules/MainSection"
+import DifficultyContext from "../context/DifficultyContext"
+import QuizzContext from "../context/QuizzContext"
 
 const Results = () => {
     const { resetDifficultyContext } = useContext(DifficultyContext)

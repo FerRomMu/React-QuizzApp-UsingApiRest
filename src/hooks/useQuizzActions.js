@@ -3,6 +3,14 @@ import { getQuestionsByDifficulty, postAnswer } from "../api/api"
 import DifficultyContext from "../context/DifficultyContext"
 import QuizzContext from "../context/QuizzContext"
 
+/** Provee de las siguientes funciones:
+ * getQuestion: Devuelve la pregunta actual.
+ * index: Devuelve el indice de la pregunta actual.
+ * getLength: Devuelve el número de preguntas.
+ * getOptions: Devuelve las opciones de la pregunta actual.
+ * setAnswer: Asigna la respuesta dada a la pregunta actual, guardando el resultado y pasando a la siguiente pregunta si la hay, 
+ *            de otra forma marca el quizz como terminado.
+ * lastResult: Devuelve el resultado de la última respuesta dada. */
 export const useQuizzActions = () => {
 
     const { difficulty } = useContext(DifficultyContext)
@@ -11,7 +19,7 @@ export const useQuizzActions = () => {
         getQuestionsByDifficulty(difficulty)
         .then(result => setQuestions(result))
         .catch(e => setQuestions([
-            { question: "Ha ocurrido un error inesperado. Pruebe recargar la página." }
+            { question: "An unexpected error has ocurred. Try to reload the page." }
         ]))
     }, [])
 

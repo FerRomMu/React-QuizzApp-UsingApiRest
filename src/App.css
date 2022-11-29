@@ -21,6 +21,8 @@ body {
     justify-content: center;
 }
 
+/** Contenido principal del juego **/
+
 .gameContainer {
     display: flex;
     align-items: center;
@@ -45,7 +47,6 @@ body {
 	}
 }
 
-/*Boxes*/
 header, section, button {
     margin-bottom: 20px;
     background: #68B984;
@@ -125,6 +126,8 @@ p {
 .incorrectSection {
     color: red
 }
+
+/** CSS para el fondo de la aplicacion web **/
 
 .backgroundContainer {
     position: absolute;
@@ -229,6 +232,7 @@ p {
     font-size: 5em;
 }
 
+/** Media Query para cuando se corre en dispositivos tablets o moviles. **/
 @media (max-width: 768px) {
 
     .backgroundContainer{

@@ -1,5 +1,15 @@
 import { createContext, useState } from "react";
 
+/** Contexto que provee de la siguiente información:
+ * quizz: Un objeto que tiene una lista de las preguntas, una lista de resultados de las respuestas dadas y 
+ * un booleano que indica si el quizz ya ha terminado.
+ * 
+ * Ademas provee los siguientes setters:
+ * resetQuizz: Resetea el contexto.
+ * setQuestions: Settea las preguntas del quizz.
+ * endQuizz: Settea el quizz como finalizado y borra las preguntas.
+ * pushAnswer: Agrega el resultado de una respuesta a la lista de resultados de respuestas.
+ */
 const QuizzContext = createContext({})
 export default QuizzContext
 

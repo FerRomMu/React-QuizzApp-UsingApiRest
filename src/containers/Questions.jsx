@@ -1,8 +1,8 @@
 import { useState } from "react"
-import AnswerSection from "../../componentes/molecules/AnswerSection"
-import Header from "../../componentes/molecules/Header"
-import MainSection from "../../componentes/molecules/MainSection"
-import { useQuizzActions } from "../../hooks/useQuizzActions"
+import AnswerSection from "../componentes/molecules/AnswerSection"
+import Header from "../componentes/molecules/Header"
+import MainSection from "../componentes/molecules/MainSection"
+import { useQuizzActions } from "../hooks/useQuizzActions"
 
 const Questions = () => {
 

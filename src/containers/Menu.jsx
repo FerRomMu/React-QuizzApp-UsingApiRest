@@ -1,8 +1,8 @@
 import { useContext, useEffect, useState } from "react"
-import { getDifficulty } from "../../api/api"
-import Header from "../../componentes/molecules/Header"
-import MainSection from "../../componentes/molecules/MainSection"
-import DifficultyContext from "../../context/DifficultyContext"
+import { getDifficulty } from "../api/api"
+import Header from "../componentes/molecules/Header"
+import MainSection from "../componentes/molecules/MainSection"
+import DifficultyContext from "../context/DifficultyContext"
 
 const Menu = () => {
 
@@ -10,7 +10,7 @@ const Menu = () => {
     const [notAvailable, setToNotAvailable] = useState(true)
     const [status, setStatus] = useState("")
     useEffect(() => {
-        setStatus("Cargando...")
+        setStatus("Loading...")
         setToNotAvailable(true)
         getDifficulty().then(
             result => {
@@ -18,7 +18,7 @@ const Menu = () => {
                 setStatus("")
                 setToNotAvailable(false)
             }
-        ).catch( e => setStatus("Ha ocurrido un error inesperado. Pruebe recargar la página."))
+        ).catch( e => setStatus("An unexpected error has ocurred. Try to reload the page."))
      }, [])
 
     const { setDifficultyContext } = useContext(DifficultyContext)
