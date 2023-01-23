@@ -7,7 +7,7 @@ Alumno Romero Muñoz Fernando Mario.
 Existen dos formas de jugar al "preguntados".
 
 ### Online
-Puedes acceder al sitio web de este repositorio donde encontrarás una versión plenamente jugable de la aplicación. Para ello solo haz [click aquí](https://ferrommu.github.io/unq-ui-fernando-mario-romero-mu-oz-trabajo-final/).
+Puedes acceder al sitio web de este repositorio donde encontrarás una versión plenamente jugable de la aplicación. Para ello solo haz [click aquí](https://ferrommu.github.io/React-QuizzApp-UsingApiRest/).
 ### Levantarla de manera local
 Para levantar el proyecto de manera local deberás seguir varios pasos primero.
 #### Clonar el repositorio
