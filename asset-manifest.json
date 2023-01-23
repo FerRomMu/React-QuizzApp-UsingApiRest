@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/unq-ui-fernando-mario-romero-mu-oz-trabajo-final/static/css/main.491527a9.css",
-    "main.js": "/unq-ui-fernando-mario-romero-mu-oz-trabajo-final/static/js/main.7d3c03c7.js",
-    "index.html": "/unq-ui-fernando-mario-romero-mu-oz-trabajo-final/index.html",
-    "main.491527a9.css.map": "/unq-ui-fernando-mario-romero-mu-oz-trabajo-final/static/css/main.491527a9.css.map",
-    "main.7d3c03c7.js.map": "/unq-ui-fernando-mario-romero-mu-oz-trabajo-final/static/js/main.7d3c03c7.js.map"
+    "main.css": "/React-QuizzApp-UsingApiRest/static/css/main.491527a9.css",
+    "main.js": "/React-QuizzApp-UsingApiRest/static/js/main.7d3c03c7.js",
+    "index.html": "/React-QuizzApp-UsingApiRest/index.html",
+    "main.491527a9.css.map": "/React-QuizzApp-UsingApiRest/static/css/main.491527a9.css.map",
+    "main.7d3c03c7.js.map": "/React-QuizzApp-UsingApiRest/static/js/main.7d3c03c7.js.map"
   },
   "entrypoints": [
     "static/css/main.491527a9.css",
