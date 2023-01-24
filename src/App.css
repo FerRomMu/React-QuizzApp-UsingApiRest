@@ -235,6 +235,9 @@ p {
 /** Media Query para cuando se corre en dispositivos tablets o moviles. **/
 @media (max-width: 768px) {
 
+    body {
+        background-color: #182222;
+    }
     .backgroundContainer{
         display: none;
     }
